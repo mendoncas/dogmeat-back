@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get "pet/getdeal/:id" => "pets#getDeal"
   delete "pet/:id" => "pets#delete"
 
+  #Deals
   get "deal/find/:id" => "deals#show"
   get "deal/all" => "deals#index"
   post "deal/create" => "deals#create"

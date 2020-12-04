@@ -17,8 +17,11 @@ class PetsController < ApplicationController
   end
 
   def delete
+    # if @pet = Pet.find(params[:id])
+    #   Deal.destroy(Pet.deals)
     if Pet.destroy(params[:id])
       render json: { "msg": "deletado com sucesso" }
     end
+    # end
   end
 end
