@@ -9,7 +9,7 @@ class DealsController < ApplicationController
   end
 
   def show
-    render json: Deal.find(params[:id])
+    render json: Deal.where(pet_id: params[:id])
   end
 
   def index
